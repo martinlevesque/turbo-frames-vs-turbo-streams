@@ -1,0 +1,14 @@
+
+<turbo-frame id="mynewframe" src="<%= frame_page_path()  %>">
+  <p>will load frame</p>
+</turbo-frame>
+
+<div id="mytarget">
+</div>
+
+<turbo-stream id="mmmcontent" action="update" target="mytarget" src="<%= third_page_path()  %>">
+  <template>
+    <p>hello templ</p>
+    </template>
+  <p>will load third</p>
+  </turbo-frame>
